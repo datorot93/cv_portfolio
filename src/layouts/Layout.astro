@@ -12,11 +12,55 @@
 	</body>
 </html>
 
-<style>
-	html,
-	body {
+<style is:global>
+	html {
+		font-family: 
+			Menlo, 
+			Monaco, 
+			Lucida Console, 
+			'Courier New', 
+			Courier, 
+			monospace;
+		
+			background: #fff;
+			letter-spacing: -0.025rem;
+	}
+
+	body,
+	figure {
 		margin: 0;
-		width: 100%;
-		height: 100%;
+		padding: 0;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	*, *::before, *::after {
+		box-sizing: border-box;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		margin: 0;
+		font-family: 
+			-apple-system, 
+			BlinkMacSystemFont, 
+			'Segoe UI', 
+			Roboto, 
+			Oxygen, 
+			Ubuntu, 
+			Cantarell, 
+			'Fira Sans', 
+			'Droid Sans', 
+			'Helvetica Neue', 
+			sans-serif;
+	}
+
+	p{
+		color: #666;
+		font-size: .9rem;
+		line-height: 1.5;
+		margin: 0;
+		text-wrap: pretty;
 	}
 </style>
