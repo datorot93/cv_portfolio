@@ -1,43 +1,54 @@
 {
     "basics": {
-      "name": "John Doe",
-      "label": "Programmer",
+      "name": "Daniel Alejandro Toro Tobar",
+      "label": "Software Developer / Data Engineer",
       "image": "https://datorot-personal.s3.us-east-2.amazonaws.com/cv_profile_tem.webp",
-      "email": "john@gmail.com",
-      "phone": "(912) 555-4321",
-      "url": "https://johndoe.com",
-      "summary": "A summary of John Doe…",
+      "email": "datorot@outlook.com",
+      "phone": "+573213369251",
+      "url": "https://datorot.com",
+      "summary": "As a software developer, I have gained experience in a range of areas including data engineering, web development, data analytics, and process automation using tools such as Python, SQL and RPA. My passion for learning and overcoming challenges drives me to constantly improve my skills in software development and data engineering. I enjoy working on personal projects related to these topics and strive to become proficient in both fields.",
       "location": {
-        "address": "2712 Broadway St",
-        "postalCode": "CA 94115",
-        "city": "San Francisco",
-        "countryCode": "US",
-        "region": "California"
+        "city": "Bogotá",
+        "countryCode": "CO",
+        "region": "Colombia"
       },
       "profiles": [
         {
             "network": "LinkedIn",
-            "username": "john",
-            "url": "https://twitter.com/john"
+            "username": "",
+            "url": "https://www.linkedin.com/in/daniel-alejandro-toro-tobar-a13578120/"
         },
         {
             "network": "GitHub",
-            "username": "john",
-            "url": "https://twitter.com/john"
+            "username": "datorot93",
+            "url": "https://github.com/datorot93"
         }
     ]
     },
-    "work": [{
-      "name": "Company",
-      "position": "President",
-      "url": "https://company.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
-      "summary": "Description…",
-      "highlights": [
-        "Started the company"
-      ]
-    }],
+    "work": [
+      {
+        "name": "Bancolombia",
+        "position": "Analista II (Data Engineer)",
+        "url": "https://www.bancolombia.com/",
+        "startDate": "2022-04-14",
+        "endDate": "2024-07-31",
+        "summary": "As the leader of the Transformation Cell in Servicios Regionales Especializados at Bancolombia, I analyze and transform management information using Python, SQL, Spark, and SAS to drive data-driven decision-making. I develop and optimize data pipelines to integrate and structure information within Bancolombia’s data warehouse, ensuring reliable and accessible data sources that support operational efficiency and digital transformation.",
+        "highlights": [
+          "Started the company"
+        ]
+      },
+      {
+        "name": "Company",
+        "position": "President",
+        "url": "https://company.com",
+        "startDate": "2013-01-01",
+        "endDate": "2014-01-01",
+        "summary": "Description…",
+        "highlights": [
+          "Started the company"
+        ]
+      }
+  ],
     "volunteer": [{
       "organization": "Organization",
       "position": "Volunteer",

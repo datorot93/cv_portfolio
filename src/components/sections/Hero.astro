@@ -27,7 +27,6 @@ const SOCIAL_ICONS: Record<string, any> = {
 
 ---
 
-
 <Section>
     <div class="container">
         <div class="info">
@@ -53,8 +52,8 @@ const SOCIAL_ICONS: Record<string, any> = {
                 {
                         phone &&
                     <a
-                        href={`mailto: ${email}`}
-                        title={`Enviar correo electrónico a ${name} al correo ${email}`}
+                        href={`tel:${phone}`}
+                        title={`Call to ${name} to the phone number: ${phone}`}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
