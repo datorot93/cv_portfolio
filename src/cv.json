@@ -38,12 +38,45 @@
         ]
       },
       {
-        "name": "Company",
-        "position": "President",
-        "url": "https://company.com",
-        "startDate": "2013-01-01",
-        "endDate": "2014-01-01",
-        "summary": "Description…",
+        "name": "Bancolombia",
+        "position": "Analista III (Data Engineer)",
+        "url": "https://www.bancolombia.com/",
+        "startDate": "2021-06-01",
+        "endDate": "2022-04-13",
+        "summary": "As an Analyst III in the Vice Presidency of Regional Services at Bancolombia, I am responsible for analyzing and transforming data using SQL, Python, and SAS to support decision-making. I query Bancolombia’s data warehouse to extract relevant information and develop insightful reports in Power BI, ensuring effective data visualization and strategic analysis for the Regional Services Management team.",
+        "highlights": [
+          "Started the company"
+        ]
+      },
+      {
+        "name": "Bancolombia",
+        "position": "Transformer",
+        "url": "https://www.bancolombia.com/",
+        "startDate": "2019-10-09",
+        "endDate": "2021-05-31",
+        "summary": "To support transformation processes in the Specialized Regional Services Management by leveraging automation. I developed and maintained software tools for end users using programming languages such as Python and Visual Basic, enhancing operational efficiency and streamlining workflows.",
+        "highlights": [
+          "Started the company"
+        ]
+      },
+      {
+        "name": "Weber Solutions",
+        "position": "RPA Developer",
+        "url": "https://www.webersolutions.es/",
+        "startDate": "2019-03-13",
+        "endDate": "2019-08-15",
+        "summary": " I was responsible for automating processes using bots created with the BluePrism tool. My role included designing and documenting automation solutions to enhance efficiency and streamline business operations.",
+        "highlights": [
+          "Started the company"
+        ]
+      },
+      {
+        "name": "Fhuryx",
+        "position": "Junior Web Developer",
+        "url": "",
+        "startDate": "2016-06-05",
+        "endDate": "2016-09-10",
+        "summary": "I was responsible for developing web applications using HTML, CSS, JavaScript, and PHP (Laravel). I worked with relational databases by writing SQL queries in MySQL and built static websites using WordPress, contributing to the creation of dynamic and user-friendly web solutions.",
         "highlights": [
           "Started the company"
         ]

@@ -9,9 +9,19 @@ import { work } from '../../cv.json'
         {
             work.map(
                 ({name, position, url, startDate, endDate, summary, highlights}) => {
+                    const startMonthName = new Intl.DateTimeFormat(
+                        "en-US", {month: "long"}
+                    ).format((new Date(startDate)))
+
                     const startYear = new Date(startDate).getFullYear()
+
                     const endYear =
-                        endDate != null ? new Date(endDate).getFullYear() : "Actual"
+                        endDate != null ? new Date(endDate).getFullYear() : "Current"
+
+                    const endMonthName = 
+                        endDate != null ? new Intl.DateTimeFormat(
+                            "en-US", {month: "long"}
+                        ).format(new Date(endDate)) : "Current"
 
                     return (
                         <li>
@@ -26,14 +36,18 @@ import { work } from '../../cv.json'
                                             datetime={startDate}
                                             data-title={startDate}
                                         >
-                                            {startYear}
+                                            {`${startMonthName}/${startYear}`}
                                         </time>
                                         { " - " }
                                         <time
                                             datetime={endDate}
                                             data-title={endDate}
                                         >
-                                            {endYear}
+                                            {
+                                                endDate != null
+                                                    ? `${endMonthName}/${endYear}`
+                                                    : "Current"
+                                            }
                                         </time>
                                     </div>
                                 </header>
@@ -60,12 +74,12 @@ import { work } from '../../cv.json'
     }
     
     article h3 {
-        font-weight: 500;
+        font-weight: 600;
         color: #111;
     }
     article h4 {
         color: #200;
-        font-weight: 400;
+        font-weight: 500;
     }
     
     header{
