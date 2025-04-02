@@ -23,7 +23,7 @@ jobs:
             - name: Deploy to S3
               uses: jakejarvis/s3-sync-action@master
               with:
-                args: --ac1 public-read --delete
+                args: --acl public-read --delete
               
               env:
                 AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
