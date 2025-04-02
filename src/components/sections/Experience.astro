@@ -1,7 +1,99 @@
 ---
 import Section from '../Section.astro'
+import { work } from '../../cv.json'
+
 ---
 
-<Section>
-    <h2>Experience</h2>
+<Section title="Work Experience">
+    <ul>
+        {
+            work.map(
+                ({name, position, url, startDate, endDate, summary, highlights}) => {
+                    const startMonthName = new Intl.DateTimeFormat(
+                        "en-US", {month: "long"}
+                    ).format((new Date(startDate)))
+
+                    const startYear = new Date(startDate).getFullYear()
+
+                    const endYear =
+                        endDate != null ? new Date(endDate).getFullYear() : "Current"
+
+                    const endMonthName = 
+                        endDate != null ? new Intl.DateTimeFormat(
+                            "en-US", {month: "long"}
+                        ).format(new Date(endDate)) : "Current"
+
+                    return (
+                        <li>
+                            <article>
+                                <header>
+                                    <div>
+                                        <h3>{ name }</h3>
+                                        <h4>{ position }</h4>                                        
+                                    </div>
+                                    <div>
+                                        <time
+                                            datetime={startDate}
+                                            data-title={startDate}
+                                        >
+                                            {`${startMonthName}/${startYear}`}
+                                        </time>
+                                        { " - " }
+                                        <time
+                                            datetime={endDate}
+                                            data-title={endDate}
+                                        >
+                                            {
+                                                endDate != null
+                                                    ? `${endMonthName}/${endYear}`
+                                                    : "Current"
+                                            }
+                                        </time>
+                                    </div>
+                                </header>
+
+                                <footer>
+                                    <p>{ summary }</p>
+                                </footer>
+
+                            </article>
+                        </li>
+                    )
+                }
+            )
+        }
+    </ul>
+    
 </Section>
+
+<style>
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    
+    article h3 {
+        font-weight: 600;
+        color: #111;
+    }
+    article h4 {
+        color: #200;
+        font-weight: 500;
+    }
+    
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 4px;
+    }
+
+    time {
+        color: #555;
+        font-size: 0.85rem;
+        min-width: 102px;
+        cursor: default;
+    }
+
+</style>
