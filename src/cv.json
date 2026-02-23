@@ -1,161 +1,215 @@
 {
-    "basics": {
-      "name": "Daniel Alejandro Toro Tobar",
-      "label": "Software Developer / Data Engineer",
-      "image": "https://datorot-personal.s3.us-east-2.amazonaws.com/cv_profile_tem.webp",
-      "email": "datorot@outlook.com",
-      "phone": "+573213369251",
-      "url": "https://datorot.com",
-      "summary": "As a software developer, I have gained experience in a range of areas including data engineering, web development, data analytics, and process automation using tools such as Python, SQL and RPA. My passion for learning and overcoming challenges drives me to constantly improve my skills in software development and data engineering. I enjoy working on personal projects related to these topics and strive to become proficient in both fields.",
-      "location": {
-        "city": "Bogotá",
-        "countryCode": "CO",
-        "region": "Colombia"
-      },
-      "profiles": [
-        {
-            "network": "LinkedIn",
-            "username": "",
-            "url": "https://www.linkedin.com/in/daniel-alejandro-toro-tobar-a13578120/"
-        },
-        {
-            "network": "GitHub",
-            "username": "datorot93",
-            "url": "https://github.com/datorot93"
-        }
-    ]
+  "basics": {
+    "name": "Daniel Alejandro Toro Tobar",
+    "label": "Software Engineer | Data Engineer | Backend Developer",
+    "image": "https://datorot-personal.s3.us-east-2.amazonaws.com/cv_profile_tem.webp",
+    "email": "datorot@outlook.com",
+    "phone": "+573213369251",
+    "url": "https://datorot.com",
+    "summary": "As a software developer, I have gained experience in a range of areas including data engineering, web development, data analytics, and process automation using tools such as Python, SQL and RPA. My passion for learning and overcoming challenges drives me to constantly improve my skills in software development and data engineering. I enjoy working on personal projects related to these topics and strive to become proficient in both fields.",
+    "location": {
+      "city": "Bogotá",
+      "countryCode": "CO",
+      "region": "Colombia"
     },
-    "work": [
+    "profiles": [
       {
-        "name": "Bancolombia",
-        "position": "Analista II (Data Engineer)",
-        "url": "https://www.bancolombia.com/",
-        "startDate": "2022-04-14",
-        "endDate": "2024-07-31",
-        "summary": "As the leader of the Transformation Cell in Servicios Regionales Especializados at Bancolombia, I analyze and transform management information using Python, SQL, Spark, and SAS to drive data-driven decision-making. I develop and optimize data pipelines to integrate and structure information within Bancolombia’s data warehouse, ensuring reliable and accessible data sources that support operational efficiency and digital transformation.",
-        "highlights": [
-          "Started the company"
-        ]
+        "network": "LinkedIn",
+        "username": "daniel-alejandro-toro-tobar-a13578120",
+        "url": "https://www.linkedin.com/in/daniel-alejandro-toro-tobar-a13578120/"
       },
       {
-        "name": "Bancolombia",
-        "position": "Analista III (Data Engineer)",
-        "url": "https://www.bancolombia.com/",
-        "startDate": "2021-06-01",
-        "endDate": "2022-04-13",
-        "summary": "As an Analyst III in the Vice Presidency of Regional Services at Bancolombia, I am responsible for analyzing and transforming data using SQL, Python, and SAS to support decision-making. I query Bancolombia’s data warehouse to extract relevant information and develop insightful reports in Power BI, ensuring effective data visualization and strategic analysis for the Regional Services Management team.",
-        "highlights": [
-          "Started the company"
-        ]
-      },
-      {
-        "name": "Bancolombia",
-        "position": "Transformer",
-        "url": "https://www.bancolombia.com/",
-        "startDate": "2019-10-09",
-        "endDate": "2021-05-31",
-        "summary": "To support transformation processes in the Specialized Regional Services Management by leveraging automation. I developed and maintained software tools for end users using programming languages such as Python and Visual Basic, enhancing operational efficiency and streamlining workflows.",
-        "highlights": [
-          "Started the company"
-        ]
-      },
-      {
-        "name": "Weber Solutions",
-        "position": "RPA Developer",
-        "url": "https://www.webersolutions.es/",
-        "startDate": "2019-03-13",
-        "endDate": "2019-08-15",
-        "summary": " I was responsible for automating processes using bots created with the BluePrism tool. My role included designing and documenting automation solutions to enhance efficiency and streamline business operations.",
-        "highlights": [
-          "Started the company"
-        ]
-      },
-      {
-        "name": "Fhuryx",
-        "position": "Junior Web Developer",
-        "url": "",
-        "startDate": "2016-06-05",
-        "endDate": "2016-09-10",
-        "summary": "I was responsible for developing web applications using HTML, CSS, JavaScript, and PHP (Laravel). I worked with relational databases by writing SQL queries in MySQL and built static websites using WordPress, contributing to the creation of dynamic and user-friendly web solutions.",
-        "highlights": [
-          "Started the company"
-        ]
+        "network": "GitHub",
+        "username": "datorot93",
+        "url": "https://github.com/datorot93"
       }
+    ]
+  },
+  "work": [
+    {
+      "name": "Mercado Libre",
+      "position": "Software Engineer",
+      "url": "https://www.mercadolibre.com/",
+      "startDate": "2025-05-01",
+      "endDate": null,
+      "summary": "Currently working as a Software Engineer at Mercado Libre, contributing to one of Latin America's leading e-commerce and fintech platforms.",
+      "highlights": []
+    },
+    {
+      "name": "Bancolombia",
+      "position": "Data Engineer - Analyst II",
+      "url": "https://www.bancolombia.com/",
+      "startDate": "2022-04-01",
+      "endDate": "2024-08-31",
+      "summary": "Led the Transformation Cell in Servicios Regionales Especializados at Bancolombia, analyzing and transforming management information using Python, SQL, Spark, and SAS to drive data-driven decision-making. Developed and optimized data pipelines to integrate and structure information within Bancolombia's data warehouse, ensuring reliable and accessible data sources that support operational efficiency and digital transformation.",
+      "highlights": []
+    },
+    {
+      "name": "Bancolombia",
+      "position": "Data Analyst - Analyst III",
+      "url": "https://www.bancolombia.com/",
+      "startDate": "2021-06-01",
+      "endDate": "2022-04-01",
+      "summary": "Worked in the Vice Presidency of Regional Services at Bancolombia, ensuring the correct use of information from an analytical perspective to support intelligent operations in the Regional Services Management as a Bancolombia channel. Responsible for analyzing and transforming data using SQL, Python, and SAS to support decision-making. Queried Bancolombia's data warehouse to extract relevant information and developed insightful reports in Power BI.",
+      "highlights": []
+    },
+    {
+      "name": "Bancolombia",
+      "position": "Digital Transformer",
+      "url": "https://www.bancolombia.com/",
+      "startDate": "2019-09-01",
+      "endDate": "2022-04-01",
+      "summary": "Developed initiatives for process improvement in Regional Services Management through process automation in Python, data science, information visualization in Power BI, and development of end-user tools through software development. Supported transformation processes by leveraging automation and developed software tools for end users using programming languages such as Python and Visual Basic.",
+      "highlights": []
+    },
+    {
+      "name": "Weber Solutions",
+      "position": "RPA Developer",
+      "url": "https://www.webersolutions.es/",
+      "startDate": "2019-04-01",
+      "endDate": "2019-08-31",
+      "summary": "Responsible for automating processes using bots created with the BluePrism tool. Role included designing and documenting automation solutions to enhance efficiency and streamline business operations.",
+      "highlights": []
+    },
+    {
+      "name": "Fhuryx",
+      "position": "Junior Web Developer",
+      "url": "",
+      "startDate": "2016-06-01",
+      "endDate": "2016-10-31",
+      "summary": "Responsible for developing web applications using HTML, CSS, JavaScript, and PHP (Laravel). Worked with relational databases by writing SQL queries in MySQL and built static websites using WordPress, contributing to the creation of dynamic and user-friendly web solutions.",
+      "highlights": []
+    }
   ],
-    "volunteer": [{
-      "organization": "Organization",
-      "position": "Volunteer",
-      "url": "https://organization.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Description…",
-      "highlights": [
-        "Awarded 'Volunteer of the Month'"
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Universidad de Los Andes",
+      "url": "https://uniandes.edu.co/",
+      "area": "Arquitecturas de Tecnologías de Información",
+      "studyType": "Master's Degree",
+      "startDate": "2026-01-01",
+      "endDate": null,
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Universidad Distrital Francisco José de Caldas",
+      "url": "https://www.udistrital.edu.co/",
+      "area": "Software Engineering",
+      "studyType": "Bachelor's Degree",
+      "startDate": "2013-08-01",
+      "endDate": "2018-12-31",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "certificates": [
+    {
+      "name": "Curso Profesional de Git y GitHub",
+      "date": "",
+      "issuer": "Platzi",
+      "url": ""
+    },
+    {
+      "name": "Curso de Python: Comprehensions, Lambdas y Manejo de Errores",
+      "date": "",
+      "issuer": "Platzi",
+      "url": ""
+    },
+    {
+      "name": "Curso de API REST",
+      "date": "",
+      "issuer": "Platzi",
+      "url": ""
+    },
+    {
+      "name": "Curso de Django",
+      "date": "",
+      "issuer": "Platzi",
+      "url": ""
+    },
+    {
+      "name": "Curso de Programación Orientada a Objetos: POO",
+      "date": "",
+      "issuer": "Platzi",
+      "url": ""
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "level": "Advanced",
+      "keywords": [
+        "Python",
+        "JavaScript",
+        "SQL"
       ]
-    }],
-    "education": [{
-      "institution": "University",
-      "url": "https://institution.com/",
-      "area": "Software Development",
-      "studyType": "Bachelor",
-      "startDate": "2011-01-01",
-      "endDate": "2013-01-01",
-      "score": "4.0",
-      "courses": [
-        "DB1101 - Basic SQL"
-      ]
-    }],
-    "awards": [{
-      "title": "Award",
-      "date": "2014-11-01",
-      "awarder": "Company",
-      "summary": "There is no spoon."
-    }],
-    "certificates": [{
-      "name": "Certificate",
-      "date": "2021-11-07",
-      "issuer": "Company",
-      "url": "https://certificate.com"
-    }],
-    "publications": [{
-      "name": "Publication",
-      "publisher": "Company",
-      "releaseDate": "2014-10-01",
-      "url": "https://publication.com",
-      "summary": "Description…"
-    }],
-    "skills": [{
+    },
+    {
       "name": "Web Development",
-      "level": "Master",
+      "level": "Intermediate",
       "keywords": [
         "HTML",
         "CSS",
-        "JavaScript"
+        "Django",
+        "Laravel",
+        "REST API"
       ]
-    }],
-    "languages": [{
-      "language": "English",
-      "fluency": "Native speaker"
-    }],
-    "interests": [{
-      "name": "Wildlife",
+    },
+    {
+      "name": "Data Engineering",
+      "level": "Advanced",
       "keywords": [
-        "Ferrets",
-        "Unicorns"
+        "Apache Spark",
+        "AWS",
+        "Data Pipelines",
+        "ETL",
+        "SAS"
       ]
-    }],
-    "references": [{
-      "name": "Jane Doe",
-      "reference": "Reference…"
-    }],
-    "projects": [{
-      "name": "Project",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Description...",
-      "highlights": [
-        "Won award at AIHacks 2016"
-      ],
-      "url": "https://project.com/"
-    }]
-  }
+    },
+    {
+      "name": "Data Analytics & BI",
+      "level": "Advanced",
+      "keywords": [
+        "Power BI",
+        "Data Visualization",
+        "SQL Server",
+        "MySQL"
+      ]
+    },
+    {
+      "name": "Development Tools",
+      "level": "Advanced",
+      "keywords": [
+        "Git",
+        "GitHub",
+        "Visual Studio Code"
+      ]
+    },
+    {
+      "name": "Automation",
+      "level": "Intermediate",
+      "keywords": [
+        "RPA",
+        "BluePrism",
+        "Process Automation"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Professional working proficiency"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": []
+}

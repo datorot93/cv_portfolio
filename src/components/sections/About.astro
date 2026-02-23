@@ -1,9 +1,20 @@
 ---
 import Section from '../Section.astro'
-
 import { basics } from '../../cv.json'
 ---
 
-<Section title="About">
-    <p>{basics.summary}</p>
-</Section>
+{basics && basics.summary && (
+    <Section title="About">
+        <p>{basics.summary}</p>
+    </Section>
+)}
+
+<style>
+    @media print {
+        p {
+            font-size: 9pt;
+            line-height: 1.35;
+            margin-bottom: 0;
+        }
+    }
+</style>

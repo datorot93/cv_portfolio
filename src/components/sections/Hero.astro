@@ -7,12 +7,6 @@ import Phone from '../../icons/Phone.astro'
 import GitHub from '../../icons/GitHub.astro'
 import LinkedIn from '../../icons/LinkedIn.astro'
 import WorldMap from 'src/icons/WorldMap.astro'
-import git from '../../icons/git.astro'
-import css from '../../icons/css.astro'
-import html from '../../icons/html.astro'
-import javascript from '../../icons/javascript.astro'
-import sql from '../../icons/sql.astro'
-import react from '../../icons/react.astro'
 
 
 
@@ -36,29 +30,31 @@ const SOCIAL_ICONS: Record<string, any> = {
                 <WorldMap />
                 {city}, {region}
             </span>
-            <footer>
+            <footer class="contact-links">
                 {
                     email &&
                     <a
-                        href={`mailto: ${email}`}
-                        title={`Enviar correo electrónico a ${name} al correo ${email}`}
+                        href={`mailto:${email}`}
+                        title={`Send email to ${name} at ${email}`}
                         target="_blank"
                         rel="noopener noreferrer"
+                        class="contact-item"
                     >
                         <Mail />
-                    
+                        <span class="contact-text">{email}</span>
                     </a>
                 }
                 {
-                        phone &&
+                    phone &&
                     <a
                         href={`tel:${phone}`}
-                        title={`Call to ${name} to the phone number: ${phone}`}
+                        title={`Call ${name} at ${phone}`}
                         target="_blank"
                         rel="noopener noreferrer"
+                        class="contact-item"
                     >
                         <Phone />
-                    
+                        <span class="contact-text">{phone}</span>
                     </a>
                 }
                 {
@@ -67,15 +63,16 @@ const SOCIAL_ICONS: Record<string, any> = {
                         return (
                             <a
                                 href={url}
-                                title={`Visitar el perfil de ${network} de ${name}`}
+                                title={`Visit ${name}'s ${network} profile`}
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                class="contact-item"
                             >
                                 <Icon />
+                                <span class="contact-text">{network}: {username || url}</span>
                             </a>
                         )
                     })
-                        
                 }
             </footer>
         </div>
@@ -154,5 +151,89 @@ const SOCIAL_ICONS: Record<string, any> = {
     footer a:hover {
         background: #eee;
         border: 1px solid #ddd;
+    }
+
+    /* Hide contact text on screen, show only icons */
+    .contact-text {
+        display: none;
+    }
+
+    @media print {
+        .container {
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .info {
+            padding-right: 0;
+            gap: 0.25rem;
+        }
+
+        h1 {
+            font-size: 16pt;
+            margin-bottom: 2pt;
+        }
+
+        h2 {
+            font-size: 11pt;
+            margin-bottom: 2pt;
+            color: #333;
+        }
+
+        /* Profile image - larger for better appearance */
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+        }
+
+        /* Compact location */
+        span {
+            font-size: 9pt;
+        }
+
+        /* Hide location icon */
+        span :global(svg) {
+            display: none;
+        }
+
+        /* Print contact info as text - fix overlap */
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 4pt;
+            gap: 0;
+            max-width: 100%;
+        }
+
+        .contact-item {
+            display: inline-block;
+            width: auto;
+            height: auto;
+            padding: 0;
+            margin: 0;
+            border: none;
+            background: none;
+            color: #000;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .contact-item:not(:last-child)::after {
+            content: " • ";
+            color: #666;
+            margin: 0 3pt;
+        }
+
+        /* Hide icons, show text */
+        .contact-item :global(svg) {
+            display: none;
+        }
+
+        .contact-text {
+            display: inline;
+            font-size: 8.5pt;
+            color: #000;
+        }
     }
 </style>
