@@ -86,7 +86,7 @@
     {
       "institution": "Universidad de Los Andes",
       "url": "https://uniandes.edu.co/",
-      "area": "Arquitecturas de Tecnologías de Información",
+      "area": "Information Technology Architectures",
       "studyType": "Master's Degree",
       "startDate": "2026-01-01",
       "endDate": null,
@@ -107,31 +107,31 @@
   "awards": [],
   "certificates": [
     {
-      "name": "Curso Profesional de Git y GitHub",
+      "name": "Professional Git and GitHub Course",
       "date": "",
       "issuer": "Platzi",
       "url": ""
     },
     {
-      "name": "Curso de Python: Comprehensions, Lambdas y Manejo de Errores",
+      "name": "Python Course: Comprehensions, Lambdas and Error Handling",
       "date": "",
       "issuer": "Platzi",
       "url": ""
     },
     {
-      "name": "Curso de API REST",
+      "name": "REST API Course",
       "date": "",
       "issuer": "Platzi",
       "url": ""
     },
     {
-      "name": "Curso de Django",
+      "name": "Django Course",
       "date": "",
       "issuer": "Platzi",
       "url": ""
     },
     {
-      "name": "Curso de Programación Orientada a Objetos: POO",
+      "name": "Object-Oriented Programming Course: OOP",
       "date": "",
       "issuer": "Platzi",
       "url": ""
