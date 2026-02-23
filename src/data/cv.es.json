@@ -1,0 +1,215 @@
+{
+  "basics": {
+    "name": "Daniel Alejandro Toro Tobar",
+    "label": "Ingeniero de Software | Ingeniero de Datos | Desarrollador Backend",
+    "image": "https://datorot-personal.s3.us-east-2.amazonaws.com/cv_profile_tem.webp",
+    "email": "datorot@outlook.com",
+    "phone": "+573213369251",
+    "url": "https://datorot.com",
+    "summary": "Como desarrollador de software, he adquirido experiencia en diversas áreas como ingeniería de datos, desarrollo web, análisis de datos y automatización de procesos utilizando herramientas como Python, SQL y RPA. Mi pasión por aprender y superar desafíos me impulsa a mejorar constantemente mis habilidades en desarrollo de software e ingeniería de datos. Disfruto trabajar en proyectos personales relacionados con estos temas y me esfuerzo por ser competente en ambos campos.",
+    "location": {
+      "city": "Bogotá",
+      "countryCode": "CO",
+      "region": "Colombia"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "daniel-alejandro-toro-tobar-a13578120",
+        "url": "https://www.linkedin.com/in/daniel-alejandro-toro-tobar-a13578120/"
+      },
+      {
+        "network": "GitHub",
+        "username": "datorot93",
+        "url": "https://github.com/datorot93"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Mercado Libre",
+      "position": "Ingeniero de Software",
+      "url": "https://www.mercadolibre.com/",
+      "startDate": "2025-05-01",
+      "endDate": null,
+      "summary": "Actualmente trabajando como Ingeniero de Software en Mercado Libre, contribuyendo a una de las principales plataformas de comercio electrónico y fintech de América Latina.",
+      "highlights": []
+    },
+    {
+      "name": "Bancolombia",
+      "position": "Ingeniero de Datos - Analista II",
+      "url": "https://www.bancolombia.com/",
+      "startDate": "2022-04-01",
+      "endDate": "2024-08-31",
+      "summary": "Lideré la Célula de Transformación en Servicios Regionales Especializados de Bancolombia, analizando y transformando información gerencial usando Python, SQL, Spark y SAS para impulsar la toma de decisiones basada en datos. Desarrollé y optimicé pipelines de datos para integrar y estructurar información dentro del data warehouse de Bancolombia, asegurando fuentes de datos confiables y accesibles que apoyan la eficiencia operacional y la transformación digital.",
+      "highlights": []
+    },
+    {
+      "name": "Bancolombia",
+      "position": "Analista de Datos - Analista III",
+      "url": "https://www.bancolombia.com/",
+      "startDate": "2021-06-01",
+      "endDate": "2022-04-01",
+      "summary": "Trabajé en la Vicepresidencia de Servicios Regionales de Bancolombia, asegurando el correcto aprovechamiento de la información desde una perspectiva analítica para apoyar operaciones inteligentes en la Gerencia de Servicios Regionales como canal de Bancolombia. Responsable de analizar y transformar datos usando SQL, Python y SAS para apoyar la toma de decisiones. Consulté el data warehouse de Bancolombia para extraer información relevante y desarrollé reportes perspicaces en Power BI.",
+      "highlights": []
+    },
+    {
+      "name": "Bancolombia",
+      "position": "Transformador Digital",
+      "url": "https://www.bancolombia.com/",
+      "startDate": "2019-09-01",
+      "endDate": "2022-04-01",
+      "summary": "Desarrollé iniciativas para la mejora de procesos en la Gerencia de Servicios Regionales a través de la automatización de procesos en Python, ciencia de datos, visualización de información en Power BI y desarrollo de herramientas de usuario final mediante desarrollo de software. Apoyé procesos de transformación aprovechando la automatización y desarrollé herramientas de software para usuarios finales usando lenguajes de programación como Python y Visual Basic.",
+      "highlights": []
+    },
+    {
+      "name": "Weber Solutions",
+      "position": "Desarrollador RPA",
+      "url": "https://www.webersolutions.es/",
+      "startDate": "2019-04-01",
+      "endDate": "2019-08-31",
+      "summary": "Responsable de automatizar procesos usando bots creados con la herramienta BluePrism. El rol incluía diseñar y documentar soluciones de automatización para mejorar la eficiencia y optimizar las operaciones de negocio.",
+      "highlights": []
+    },
+    {
+      "name": "Fhuryx",
+      "position": "Desarrollador Web Junior",
+      "url": "",
+      "startDate": "2016-06-01",
+      "endDate": "2016-10-31",
+      "summary": "Responsable de desarrollar aplicaciones web usando HTML, CSS, JavaScript y PHP (Laravel). Trabajé con bases de datos relacionales escribiendo consultas SQL en MySQL y construí sitios web estáticos usando WordPress, contribuyendo a la creación de soluciones web dinámicas y amigables para el usuario.",
+      "highlights": []
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Universidad de Los Andes",
+      "url": "https://uniandes.edu.co/",
+      "area": "Arquitecturas de Tecnologías de Información",
+      "studyType": "Maestría",
+      "startDate": "2026-01-01",
+      "endDate": null,
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Universidad Distrital Francisco José de Caldas",
+      "url": "https://www.udistrital.edu.co/",
+      "area": "Ingeniería de Software",
+      "studyType": "Pregrado",
+      "startDate": "2013-08-01",
+      "endDate": "2018-12-31",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "certificates": [
+    {
+      "name": "Curso Profesional de Git y GitHub",
+      "date": "",
+      "issuer": "Platzi",
+      "url": ""
+    },
+    {
+      "name": "Curso de Python: Comprehensions, Lambdas y Manejo de Errores",
+      "date": "",
+      "issuer": "Platzi",
+      "url": ""
+    },
+    {
+      "name": "Curso de API REST",
+      "date": "",
+      "issuer": "Platzi",
+      "url": ""
+    },
+    {
+      "name": "Curso de Django",
+      "date": "",
+      "issuer": "Platzi",
+      "url": ""
+    },
+    {
+      "name": "Curso de Programación Orientada a Objetos: POO",
+      "date": "",
+      "issuer": "Platzi",
+      "url": ""
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Lenguajes de Programación",
+      "level": "Avanzado",
+      "keywords": [
+        "Python",
+        "JavaScript",
+        "SQL"
+      ]
+    },
+    {
+      "name": "Desarrollo Web",
+      "level": "Intermedio",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Django",
+        "Laravel",
+        "REST API"
+      ]
+    },
+    {
+      "name": "Ingeniería de Datos",
+      "level": "Avanzado",
+      "keywords": [
+        "Apache Spark",
+        "AWS",
+        "Pipelines de Datos",
+        "ETL",
+        "SAS"
+      ]
+    },
+    {
+      "name": "Análisis de Datos y BI",
+      "level": "Avanzado",
+      "keywords": [
+        "Power BI",
+        "Visualización de Datos",
+        "SQL Server",
+        "MySQL"
+      ]
+    },
+    {
+      "name": "Herramientas de Desarrollo",
+      "level": "Avanzado",
+      "keywords": [
+        "Git",
+        "GitHub",
+        "Visual Studio Code"
+      ]
+    },
+    {
+      "name": "Automatización",
+      "level": "Intermedio",
+      "keywords": [
+        "RPA",
+        "BluePrism",
+        "Automatización de Procesos"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "Competencia profesional"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": []
+}

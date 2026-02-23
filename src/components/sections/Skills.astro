@@ -1,7 +1,76 @@
 ---
 import Section from '../Section.astro'
+import { skills } from '../../cv.json'
 ---
 
-<Section>
-    <h2>Skills</h2>
-</Section>
+{skills && skills.length > 0 && (
+    <Section title="Skills">
+        <ul class="skills-list">
+            {skills.map(({name, keywords, level}) => (
+                <li class="skill-category">
+                    <h3>{name}</h3>
+                    <div class="keywords">
+                        {keywords.map((keyword) => (
+                            <span class="keyword">{keyword}</span>
+                        ))}
+                    </div>
+                </li>
+            ))}
+        </ul>
+    </Section>
+)}
+
+<style>
+    .skills-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
+    }
+
+    .skill-category h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #111;
+        margin-bottom: 0.5rem;
+    }
+
+    .keywords {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .keyword {
+        background: #f5f5f5;
+        padding: 0.25rem 0.75rem;
+        border-radius: 4px;
+        font-size: 0.85rem;
+        color: #555;
+        border: 1px solid #e0e0e0;
+    }
+
+    @media print {
+        .skills-list {
+            gap: 0.5rem;
+        }
+
+        .skill-category h3 {
+            font-size: 10pt;
+            margin-bottom: 0.25rem;
+        }
+
+        .keywords {
+            gap: 0.25rem;
+        }
+
+        .keyword {
+            background: transparent;
+            border: 0.5pt solid #ccc;
+            padding: 1pt 4pt;
+            font-size: 8pt;
+            border-radius: 2px;
+        }
+    }
+</style>

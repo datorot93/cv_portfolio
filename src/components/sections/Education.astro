@@ -1,7 +1,137 @@
 ---
 import Section from '../Section.astro'
+import { education } from '../../cv.json'
 ---
 
-<Section>
-    <h2>Education</h2>
+{education && education.length > 0 && (
+<Section title="Education">
+    <ul>
+        {
+            education.map(
+                ({institution, url, startDate, endDate, area, studyType}) => {
+                    const startMonthName = new Intl.DateTimeFormat(
+                        "en-US", {month: "long"}
+                    ).format((new Date(startDate)))
+
+                    const startYear = new Date(startDate).getFullYear()
+
+                    const endYear =
+                        endDate != null ? new Date(endDate).getFullYear() : "Current"
+
+                    const endMonthName = 
+                        endDate != null ? new Intl.DateTimeFormat(
+                            "en-US", {month: "long"}
+                        ).format(new Date(endDate)) : "Current"
+
+                    return (
+                        <li>
+                            <article>
+                                <header>
+                                    <div>
+                                        {url ? (
+                                            <a
+                                                href={url}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                <h3>{institution}</h3>
+                                            </a>
+                                        ) : (
+                                            <h3>{institution}</h3>
+                                        )}
+                                        <h4>{studyType}</h4>
+                                        <p>{area}{endDate === null && ' (In Progress)'}</p>
+                                    </div>
+                                    <div>
+                                        <time
+                                            datetime={startDate}
+                                            data-title={startDate}
+                                        >
+                                            {`${startMonthName}/${startYear}`}
+                                        </time>
+                                        {' - '}
+                                        <time
+                                            datetime={endDate}
+                                            data-title={endDate}
+                                        >
+                                            {
+                                                endDate != null
+                                                    ? `${endMonthName}/${endYear}`
+                                                    : 'Present'
+                                            }
+                                        </time>
+                                    </div>
+                                </header>
+                            </article>
+                        </li>
+                    )
+                }
+            )
+        }
+    </ul>
 </Section>
+)}
+
+<style>
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    
+    article h3 {
+        font-weight: 600;
+        color: #111;
+    }
+    article h4 {
+        color: #200;
+        font-weight: 500;
+    }
+    
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 4px;
+    }
+
+    time {
+        color: #555;
+        font-size: 0.85rem;
+        min-width: 102px;
+        cursor: default;
+    }
+
+    @media print {
+        ul {
+            gap: 6pt !important;
+        }
+
+        article {
+            page-break-inside: avoid;
+        }
+
+        article h3 {
+            font-size: 10pt;
+            margin-bottom: 1pt;
+        }
+
+        article h4 {
+            font-size: 9pt;
+            margin-bottom: 1pt;
+        }
+
+        article p {
+            font-size: 8.5pt;
+            margin-bottom: 0;
+        }
+
+        header {
+            margin-bottom: 2pt;
+        }
+
+        time {
+            font-size: 8pt;
+        }
+    }
+</style>

@@ -1,0 +1,112 @@
+---
+// Language toggle component
+---
+
+<div class="language-toggle no-print">
+    <button id="lang-en" class="lang-btn active" data-lang="en">
+        EN
+    </button>
+    <span class="separator">|</span>
+    <button id="lang-es" class="lang-btn" data-lang="es">
+        ES
+    </button>
+</div>
+
+<script>
+    import { setLanguageInStorage } from '../utils/i18n';
+
+    // Detect current page language
+    const isSpanishPage = window.location.pathname.includes('/es');
+    const currentLang = isSpanishPage ? 'es' : 'en';
+
+    // Set active button on load
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        const btnLang = btn.getAttribute('data-lang');
+        if (btnLang === currentLang) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+    });
+
+    // Handle language switching
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const lang = btn.getAttribute('data-lang');
+            if (lang === 'en' || lang === 'es') {
+                setLanguageInStorage(lang);
+
+                // Navigate to correct language page
+                const baseUrl = window.location.origin;
+                if (lang === 'es') {
+                    window.location.href = `${baseUrl}/es`;
+                } else {
+                    window.location.href = baseUrl;
+                }
+            }
+        });
+    });
+</script>
+
+<style>
+    .language-toggle {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: white;
+        padding: 0.5rem 0.75rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+    }
+
+    .lang-btn {
+        background: none;
+        border: none;
+        font-family: inherit;
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: #666;
+        cursor: pointer;
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+        transition: all 0.2s ease;
+    }
+
+    .lang-btn:hover {
+        background: #f5f5f5;
+        color: #333;
+    }
+
+    .lang-btn.active {
+        color: #0066cc;
+        font-weight: 600;
+    }
+
+    .separator {
+        color: #ddd;
+        user-select: none;
+    }
+
+    @media print {
+        .language-toggle,
+        .no-print {
+            display: none !important;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .language-toggle {
+            top: 0.5rem;
+            right: 0.5rem;
+            padding: 0.4rem 0.6rem;
+        }
+
+        .lang-btn {
+            font-size: 0.85rem;
+        }
+    }
+</style>
