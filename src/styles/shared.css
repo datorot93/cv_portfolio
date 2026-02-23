@@ -1,0 +1,396 @@
+/* ==============================================
+   SHARED STYLES - Used by both EN and ES pages
+   ============================================== */
+
+/* Main container */
+main {
+  padding: 4rem;
+  margin: auto;
+  width: 100%;
+}
+
+/* Hero Section */
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-right: 32px;
+}
+
+.hero-info h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.hero-info h2 {
+  color: #444;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-wrap: balance;
+  margin: 0;
+}
+
+.location {
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+}
+
+.hero-image img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  width: 128px;
+  border-radius: 16px;
+}
+
+/* Contact Links */
+.contact-links {
+  display: flex;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.contact-item {
+  color: #777;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+  padding: 4px;
+  height: 32px;
+  width: 32px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.contact-item:hover {
+  background: #eee;
+  border: 1px solid #ddd;
+}
+
+.contact-text {
+  display: none;
+}
+
+/* Timeline Lists (Experience & Education) */
+.timeline-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline-list article h3 {
+  font-weight: 600;
+  color: #111;
+  margin: 0;
+}
+
+.timeline-list article h4 {
+  color: #333;
+  font-weight: 500;
+  margin: 4px 0;
+}
+
+.timeline-list article p {
+  margin: 0;
+}
+
+.timeline-list header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 4px;
+}
+
+.timeline-list header > div:first-child {
+  flex: 1;
+}
+
+.date-range {
+  color: #555;
+  font-size: 0.85rem;
+  min-width: 102px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Skills List */
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.skill-category h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 0.5rem;
+}
+
+.keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.keyword {
+  background: #f5f5f5;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #555;
+  border: 1px solid #e0e0e0;
+}
+
+/* Collapsible Descriptions */
+.expand-toggle {
+  background: #fff;
+  border: 1.5px solid #ddd;
+  cursor: pointer;
+  padding: 0;
+  color: #666;
+  font-size: 0.75rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.expand-toggle:hover {
+  border-color: #999;
+  background: #f5f5f5;
+}
+
+.expand-toggle:focus {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+}
+
+.expand-toggle[aria-expanded="true"] {
+  background: #333;
+  border-color: #333;
+  color: #fff;
+}
+
+.expand-toggle[aria-expanded="true"]:hover {
+  background: #444;
+  border-color: #444;
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 0.8rem;
+}
+
+.expand-toggle[aria-expanded="true"] .arrow {
+  transform: rotate(180deg);
+}
+
+.description {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.25s ease-out,
+              opacity 0.2s ease-out;
+  margin-top: 0;
+}
+
+.description[data-collapsed="false"] {
+  max-height: 300px;
+  opacity: 1;
+  margin-top: 0.5rem;
+  transition: max-height 0.3s ease-in,
+              opacity 0.25s ease-in;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ===========================
+   PRINT STYLES
+   =========================== */
+
+@media print {
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  section {
+    margin-bottom: 8pt;
+  }
+
+  /* Hero - Print */
+  .hero-container {
+    gap: 0.5rem;
+    margin-bottom: 6pt;
+  }
+
+  .hero-info {
+    padding-right: 0;
+    gap: 0.25rem;
+  }
+
+  .hero-info h1 {
+    font-size: 16pt;
+    margin-bottom: 2pt;
+  }
+
+  .hero-info h2 {
+    font-size: 11pt;
+    margin-bottom: 2pt;
+  }
+
+  .location {
+    font-size: 9pt;
+  }
+
+  .location svg {
+    display: none;
+  }
+
+  .hero-image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+  }
+
+  /* Contact - Print */
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4pt;
+    gap: 0;
+    max-width: 100%;
+  }
+
+  .contact-item {
+    display: inline-block;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    background: none !important;
+    font-size: 8.5pt;
+    color: #000;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .contact-item:not(:last-child)::after {
+    content: " • ";
+    color: #666;
+    margin: 0 3pt;
+  }
+
+  .contact-item svg {
+    display: none;
+  }
+
+  .contact-text {
+    display: inline !important;
+    font-size: 8.5pt;
+    color: #000;
+  }
+
+  /* Timeline - Print */
+  .timeline-list {
+    gap: 6pt !important;
+  }
+
+  .timeline-list article {
+    page-break-inside: avoid;
+  }
+
+  .timeline-list article h3 {
+    font-size: 10pt;
+    margin-bottom: 1pt;
+  }
+
+  .timeline-list article h4 {
+    font-size: 9pt;
+    margin-bottom: 1pt;
+  }
+
+  .timeline-list article p {
+    font-size: 8.5pt;
+    line-height: 1.3;
+    margin-bottom: 0;
+  }
+
+  .timeline-list header {
+    margin-bottom: 2pt;
+  }
+
+  .date-range {
+    font-size: 8pt;
+  }
+
+  /* Descriptions - Print (show all) */
+  .expand-toggle {
+    display: none !important;
+  }
+
+  .description {
+    display: block !important;
+    max-height: none !important;
+    opacity: 1 !important;
+    margin-top: 0.5rem !important;
+  }
+
+  /* Skills - Print */
+  .skills-list {
+    gap: 6pt !important;
+  }
+
+  .skill-category h3 {
+    font-size: 10pt;
+    margin-bottom: 2pt;
+  }
+
+  .keywords {
+    gap: 3pt !important;
+  }
+
+  .keyword {
+    background: transparent;
+    border: 0.5pt solid #ccc;
+    padding: 1pt 4pt;
+    font-size: 8pt;
+    border-radius: 2px;
+  }
+}
